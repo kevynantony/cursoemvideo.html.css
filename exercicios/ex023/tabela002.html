@@ -26,16 +26,31 @@
             text-align: right;
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: rosybrown;
+
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gold;
+        }
+
 
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -53,12 +68,37 @@
                 <td>Rio de janeiro</td>
                 <td class="num">17.264.943</td>
             </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.870.907</td>
+            </tr>
+
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">1.123.3263</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.562.007</td>
+            </tr>
+
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.268.836</td>
+            </tr>
+
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.711.196</td>
+            </tr>
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td>0000</td>
+                <th scope="row">Total de Habitantes</th>
+                <td style="text-align: right;">0000</td>
             </tr>
         </tfoot>
     </table>
