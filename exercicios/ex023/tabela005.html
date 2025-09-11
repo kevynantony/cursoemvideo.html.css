@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        th {
+            border: 1px solid black;
+            padding: 8px;
+            background-color: cornflowerblue;
+
+        }
+
+        col.cnome {
+            background-color: cornflowerblue;
+        }
+
+        col.cgrupo {
+            background-color: rgb(238, 252, 43);
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Exercício de Tabela</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="3">
+        </colgroup>
+
+
+        <caption>Cadastro</caption>
+
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Sex</th>
+            <th scope="col">Age</th>
+            <th scope="col">Profession</th>
+        </tr>
+
+        <tr>
+            <td>Amanda</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Professora</td>
+        </tr>
+
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Advogado</td>
+        </tr>
+
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+
+        <tr>
+            <td>Kevyn</td>
+            <td>M</td>
+            <td>25</td>
+            <td>Eng.software</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
